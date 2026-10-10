@@ -1,0 +1,9 @@
+scenario,bucket,min_multiple,max_multiple,probability,source
+base,loss,0,1,0.65,Correlation Ventures 2004-2013 (stated)
+base,small,1,5,0.25,Correlation Ventures 2004-2013 (derived)
+base,good,5,10,0.06,Correlation Ventures 2004-2013 (derived)
+base,home_run,10,100,0.04,Correlation Ventures 2004-2013 (stated)
+optimistic,loss,0,1,0.60,Assumption: base minus 5 points
+optimistic,small,1,5,0.25,Correlation Ventures 2004-2013 (derived)
+optimistic,good,5,10,0.06,Correlation Ventures 2004-2013 (derived)
+optimistic,home_run,10,100,0.09,Vlerick et al. 2023 survey of 885 European VCs
