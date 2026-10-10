@@ -7,7 +7,7 @@ A Monte Carlo model that plays the same venture capital fund 10,000 times to ans
 
 ## Roadmap
 
-- [ ] Phase 1: outcome of a single startup (power-law distribution from Correlation Ventures data)
+- [x] Phase 1: outcome of a single startup (power-law distribution from Correlation Ventures data)
 - [ ] Phase 2: portfolio size vs risk and return
 - [ ] Phase 3: fund economics (management fees, follow-on reserves, dilution, carry) to go from gross to net
 - [ ] Phase 4: timing (J-curve, IRR, DPI)
@@ -44,6 +44,18 @@ A 2023 survey of 885 European venture capitalists by Vlerick Business School and
 - **The survey is self-reported.** Investors answering a questionnaire tend to be optimistic, which is why it is the optimistic scenario and not the base case.
 - **Ranges inside each bucket are my choice.** In particular, the 100x cap on the top bucket is a placeholder that I revisit in the next step.
 
+## Phase 1 results: a single startup
+
+Simulating 10,000 single investments (base scenario):
+
+| Statistic | Value |
+|---|---|
+| Mean multiple | 2.75x |
+| Median multiple | 0.52x |
+| Deals written off to zero | 32% |
+| Value produced by the best 5% | ~60% |
+
+The typical startup loses half of the money, but a few outliers lift the average to 2.75x. Returns depend on catching those outliers, which is why portfolio size matters (phase 2).
 
 ## Author
 
