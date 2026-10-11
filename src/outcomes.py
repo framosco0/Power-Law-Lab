@@ -48,3 +48,12 @@ def net_tvpi(gross_multiple):
     profit = max(returned - FUND_SIZE, 0)        # no carry if the fund loses money
     to_lps = returned - CARRY * profit                      # subtract carry
     return to_lps / FUND_SIZE
+
+
+def simulate_fund(n_startups):
+    multiples = []
+
+    for i in range(n_startups):
+        multiples.append(draw_outcome())
+
+    return np.mean(multiples)
