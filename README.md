@@ -103,6 +103,19 @@ We apply a 2% annual management fee for 10 years and 20% carried interest to 10,
 
 Notebook: `notebooks/03_fund_economics.ipynb`
 
+## Phase 4 results: timing, IRR and the J-curve
+
+TVPI says how much LPs get back, not when. We model the average fund (1.96x net) with simple timing assumptions: LPs pay in EUR 24M a year in years 1-5, and exits return EUR 235.2M in equal parts in years 6-12.
+
+![J-curve](results/phase4_j_curve.png)
+
+- The LP balance bottoms out at -EUR 120M in year 5 and turns positive only in year 9.
+- IRR from cash flows is 12.1%, versus 5.8% if all capital were locked up for 12 years, because each euro is invested for about 6 years on average.
+- Same TVPI, very different IRR: LPs look at TVPI, IRR and DPI (cash actually returned) together.
+- The IRR depends heavily on the timing assumptions; later exits would lower it while leaving TVPI unchanged.
+
+Notebook: `notebooks/04_timing.ipynb`
+
 
 ## Author
 
