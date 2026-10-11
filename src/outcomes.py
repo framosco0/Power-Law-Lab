@@ -2,6 +2,7 @@ import numpy as np
 
 rng = np.random.default_rng(42)
 WRITE_OFF_SHARE = 0.5
+HOME_RUN_CAP = 100
 
 def pick_bucket(u):
 
