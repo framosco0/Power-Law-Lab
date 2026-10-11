@@ -71,6 +71,18 @@ We simulate 10,000 funds for each portfolio size, with equal tickets in every st
 
 Notebook: `notebooks/02_portfolio.ipynb`
 
+### Sensitivity test: the 100x cap on home runs
+
+The data only say that 4% of startups return more than 10x, so the 100x upper limit is our assumption. Changing only the cap:
+
+| Home-run cap | Mean multiple per startup |
+|---|---|
+| 100x | 2.73x |
+| 1000x | 9.67x |
+
+A 1000x cap would imply that a diversified fund returns about 10x, far above the roughly 3x of top-quartile VC funds. We keep 100x as the base case because it is consistent with observed fund returns. A power-law (Pareto) tail would be a more realistic extension.
+
+Details: `notebooks/02_portfolio.ipynb`
 
 ## Author
 
