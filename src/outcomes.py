@@ -27,7 +27,7 @@ def draw_multiple(bucket):
     elif bucket == "good":
         lo, hi = 5, 10
     else:
-        lo, hi = 10, 100
+        lo, hi = 10, HOME_RUN_CAP
     return lo * (hi / lo) ** v 
 
 def draw_outcome():
