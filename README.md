@@ -57,6 +57,21 @@ Simulating 10,000 single investments (base scenario):
 
 The typical startup loses half of the money, but a few outliers lift the average to 2.75x. Returns depend on catching those outliers, which is why portfolio size matters (phase 2).
 
+## Phase 2 results: how many startups does a fund need?
+
+We simulate 10,000 funds for each portfolio size, with equal tickets in every startup.
+
+![Portfolio size vs probabilities](results/phase2_portfolio_size.png)
+
+- Diversification does not change the expected return (about 2.75x), only the risk.
+- Below about 10 startups, a fund is more likely to lose money than to return 3x.
+- The probability of losing money falls to about 7% with 30 startups and is close to zero above 100.
+- The chance of 3x plateaus at about 37% between 30 and 100 startups, then declines as the fund converges to the average.
+- This supports the typical seed portfolio of 30-50 companies, assuming no selection skill.
+
+Notebook: `notebooks/02_portfolio.ipynb`
+
+
 ## Author
 
 Francesco Moscogiuri, Finance MSc at Nova SBE. [LinkedIn](linkedin.com/in/francesco-moscogiuri) · [Southern Signals](https://francescomoscogiuri.substack.com/?utm_campaign=profile_chips)
