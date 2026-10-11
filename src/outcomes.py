@@ -34,3 +34,17 @@ def draw_outcome():
 
     bucket = pick_bucket(rng.random())    # 1. Range
     return draw_multiple(bucket)          # 2. Return
+
+
+FUND_SIZE = 120      # committed capital, EUR M
+FEE_RATE = 0.02      # annual management fee
+FEE_YEARS = 10       # fee period
+CARRY = 0.20         # share of profits to the GP
+
+def net_tvpi(gross_multiple):
+    fees = FEE_RATE * FUND_SIZE * FEE_YEARS                                   # total fees, EUR M
+    invested = FUND_SIZE - fees                  # capital actually invested
+    returned = gross_multiple * invested                               # cash returned by startups
+    profit = max(returned - FUND_SIZE, 0)        # no carry if the fund loses money
+    to_lps = returned - CARRY * profit                      # subtract carry
+    return to_lps / FUND_SIZE
