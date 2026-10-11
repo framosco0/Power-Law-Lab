@@ -10,7 +10,7 @@ A Monte Carlo model that plays the same venture capital fund 10,000 times to ans
 - [x] Phase 1: outcome of a single startup (power-law distribution from Correlation Ventures data)
 - [x] Phase 2: portfolio size vs risk and return
 - [x] Phase 3: fund economics (management fees, follow-on reserves, dilution, carry) to go from gross to net
-- [ ] Phase 4: timing (J-curve, IRR, DPI)
+- [x] Phase 4: timing (J-curve, IRR, DPI)
 - [ ] Phase 5: strategy comparison and a 2-page memo
 - [ ] Phase 6: interactive Streamlit app
 
