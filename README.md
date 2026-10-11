@@ -9,7 +9,7 @@ A Monte Carlo model that plays the same venture capital fund 10,000 times to ans
 
 - [x] Phase 1: outcome of a single startup (power-law distribution from Correlation Ventures data)
 - [x] Phase 2: portfolio size vs risk and return
-- [ ] Phase 3: fund economics (management fees, follow-on reserves, dilution, carry) to go from gross to net
+- [x] Phase 3: fund economics (management fees, follow-on reserves, dilution, carry) to go from gross to net
 - [ ] Phase 4: timing (J-curve, IRR, DPI)
 - [ ] Phase 5: strategy comparison and a 2-page memo
 - [ ] Phase 6: interactive Streamlit app
@@ -83,6 +83,26 @@ The data only say that 4% of startups return more than 10x, so the 100x upper li
 A 1000x cap would imply that a diversified fund returns about 10x, far above the roughly 3x of top-quartile VC funds. We keep 100x as the base case because it is consistent with observed fund returns. A power-law (Pareto) tail would be a more realistic extension.
 
 Details: `notebooks/02_portfolio.ipynb`
+
+## Phase 3 results: what LPs actually receive
+
+We apply a 2% annual management fee for 10 years and 20% carried interest to 10,000 simulated funds of 30 startups each (EUR 120M fund).
+
+![Gross vs net TVPI](results/phase3_gross_vs_net.png)
+
+| Fund of 30 startups | Gross | Net to LPs |
+|---|---|---|
+| Mean TVPI | 2.76x | 1.96x |
+| P(TVPI < 1x) | 6.8% | 15.4% |
+| P(TVPI ≥ 3x) | 36.4% | 16.1% |
+
+- Fees and carry take about 0.8x of the average multiple.
+- After fees, the chance of losing money more than doubles and the chance of 3x is more than halved.
+- Only EUR 96M of the EUR 120M is invested, so startups must return 1.25x just for LPs to break even, and about 4.4x for LPs to get 3x.
+- After fees, the average fund barely beats public markets. LPs pay for manager selection, not for access to the asset class.
+
+Notebook: `notebooks/03_fund_economics.ipynb`
+
 
 ## Author
 
