@@ -57,3 +57,10 @@ def simulate_fund(n_startups):
         multiples.append(draw_outcome())
 
     return np.mean(multiples)
+
+
+# Cumulative thresholds: loss, small, good (home_run is the rest)
+SCENARIOS = {
+    "base":    (0.65, 0.90, 0.96),   # average manager (Correlation Ventures)
+    "skilled": (0.60, 0.85, 0.91),   # skilled manager (9% home runs, Vlerick)
+}
