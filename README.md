@@ -11,7 +11,7 @@ A Monte Carlo model that plays the same venture capital fund 10,000 times to ans
 - [x] Phase 2: portfolio size vs risk and return
 - [x] Phase 3: fund economics (management fees, follow-on reserves, dilution, carry) to go from gross to net
 - [x] Phase 4: timing (J-curve, IRR, DPI)
-- [ ] Phase 5: strategy comparison and a 2-page memo
+- [x] Phase 5: strategy comparison and a 2-page memo
 - [ ] Phase 6: interactive Streamlit app
 
 ## Data and assumptions
@@ -115,6 +115,15 @@ TVPI says how much LPs get back, not when. We model the average fund (1.96x net)
 - The IRR depends heavily on the timing assumptions; later exits would lower it while leaving TVPI unchanged.
 
 Notebook: `notebooks/04_timing.ipynb`
+
+Phase 5: concentrate vs diversify strategy comparison
+
+- Add SCENARIOS (base, skilled) and pass scenario through pick_bucket, draw_outcome, simulate_fund
+- Compare average vs skilled manager across 5-200 startups, net of fees
+- Average manager: P(3x) peaks at ~15 startups; skilled: keeps rising with size
+- Add strategy chart and README section
+
+Notebook: `notebooks/05_strategy.ipynb`
 
 
 ## Author
