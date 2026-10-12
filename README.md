@@ -3,7 +3,8 @@
 A Monte Carlo model that plays the same venture capital fund 10,000 times to answer one question:
 **how should a €120M fund build its portfolio to maximise the chance of returning 3x to its investors, net of costs?**
 
-> Work in progress: I'm building it one phase at a time, and each phase lands as its own commit.
+> **TL;DR:** An average seed manager has its best chance of 3x net with ~15 startups, but at a 28% risk of losing LP money. A skilled manager should diversify to 30-50 companies.
+> 📄 [Read the 2-page investment memo](docs/memo.md)
 
 ## Roadmap
 
