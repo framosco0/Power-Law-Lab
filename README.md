@@ -5,6 +5,7 @@ A Monte Carlo model that plays the same venture capital fund 10,000 times to ans
 
 > **TL;DR:** An average seed manager has its best chance of 3x net with ~15 startups, but at a 28% risk of losing LP money. A skilled manager should diversify to 30-50 companies.
 > 📄 [Read the 2-page investment memo](docs/memo.md)
+**Try it live:** https://power-law-lab.streamlit.app (choose the portfolio size and manager skill, see the odds of a 3x net fund)
 
 ## Roadmap
 
@@ -13,7 +14,7 @@ A Monte Carlo model that plays the same venture capital fund 10,000 times to ans
 - [x] Phase 3: fund economics (management fees, follow-on reserves, dilution, carry) to go from gross to net
 - [x] Phase 4: timing (J-curve, IRR, DPI)
 - [x] Phase 5: strategy comparison and a 2-page memo
-- [ ] Phase 6: interactive Streamlit app
+- [x] Phase 6: interactive Streamlit app
 
 ## Data and assumptions
 
