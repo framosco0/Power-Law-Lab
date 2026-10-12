@@ -4,13 +4,14 @@ rng = np.random.default_rng(42)
 WRITE_OFF_SHARE = 0.5
 HOME_RUN_CAP = 100
 
-def pick_bucket(u):
-
-    if u<0.65:
+def pick_bucket(u, scenario = "base"):
+    t1, t2, t3 = SCENARIOS[scenario]
+    
+    if u<t1:
         return "loss"
-    elif 0.65<=u<0.90:
+    elif u<t2:
         return "small"
-    elif 0.90<=u<0.96:
+    elif u<t3:
         return "good"
     else:
         return "home_run"
