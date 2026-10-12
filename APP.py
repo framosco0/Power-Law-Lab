@@ -1,5 +1,6 @@
-import sys
-sys.path.append("src")
+import os
+import sys 
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 import pandas as pd
 import numpy as np
